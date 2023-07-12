@@ -9,11 +9,12 @@
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Inter:wght@300;400;500;700;800&family=Lato:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="public/css/main.min.css">
 </head>
-<body>
+<body class="text-black-90 bg-white-90">
   <header class="navbar navbar-expand-lg">
     <div class="container d-flex justify-content-lg-between py-5">
-      <a class="navbar-brand d-flex m-0" href="#">
-        <div class="brand-name m-0 d-flex flex-centre fw-bold text-black-90 text-uppercase">OLA-OLU</div>
+      <a class="navbar-brand brand d-flex gap-2 gap-xxl-3 m-0" href="#">
+        <div class="flex-centre"><img class="brand-logo" src="public/assets/imgs/logo.png" alt="OLA-OLU logo"></div>
+        <div class="brand-name m-0 d-flex flex-centre text-black-90 fw-bold text-uppercase">OLA-OLU</div>
       </a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-container" aria-controls="nav-container" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,14 +49,19 @@
   <section id="hero">
     <div class="hero-main d-flex align-items-center justify-content-center">
       <div class="container">
-        <div class="row mt-md-10 mt-lg-25">
+        <div class="row mt-md-10 mt-lg-25 mt-xl-30 mb-xl-20">
           <div class="hero-left-col col-lg-6 d-flex align-items-center">
              <div class=""> <!-- had `my-auto` -->
-              <h1 class="hero-text fw-bold"><span>Modern</span> Healthcare at Your <span>Fingertips</span></h1>
+              <h1 class="hero-text position-relative fw-bold">
+                <span>Modern</span> Healthcare at Your <span>Fingertips</span>
+                <svg class="hero-stroke position-absolute d-none d-lg-block" width="282" height="17" viewBox="0 0 282 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.71577 15.3013C50.364 7.77967 174.171 -4.37132 280.213 7.19739" stroke="#0360D9" stroke-width="3" stroke-linecap="round"/>
+                </svg>
+              </h1>
               <p class="mt-4 mt-lg-6">
                 Our state-of-the-art facility is equipped with the latest medical technology and staffed by a team of highly skilled professionals who are dedicated to providing personalized care to our patients.
               </p>
-              <button class="btn bg-primary d-flex my-8 mt-lg-10 mb-lg-15 mb-xxl-20 text-light-grey" type="button">Book Appointment</button>
+              <button class="btn bg-primary d-flex my-8 mt-lg-10 mb-lg-15 mb-xl-20 mb-xxl-30 text-light-grey" type="button">Book Appointment</button>
             </div>
           </div>
 
