@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="public/css/main.min.css">
 </head>
 <body class="text-black-90 bg-white-90">
+  
   <header class="navbar navbar-expand-lg">
     <div class="container d-flex justify-content-lg-between py-5">
       <a class="navbar-brand brand d-flex gap-2 gap-xxl-3 m-0" href="#">
@@ -39,11 +40,11 @@
           <li class="nav-item"><a href="#publications" class="nav-link">Publications</a></li>
           <li class="nav-item"><a href="#career" class="nav-link">Career</a></li>
           <li class="nav-item"><a href="#carol" class="nav-link">Carol on the rock</a></li>
-          <button class="btn-cta btn bg-primary width-max-content d-block d-lg-none text-light-grey" type="button">Book Appointment</button>
+          <button class="btn btn-small width-max-content d-block d-lg-none text-light-grey" type="button">Book Appointment</button>
         </ul>
       </div>
 
-      <button class="btn-cta btn bg-primary d-none d-lg-block text-light-grey" type="button">Book Appointment</button>
+      <button class="btn btn-large d-none d-lg-block text-light-grey" type="button">Book Appointment</button>
     </div>
   </header>
 
@@ -52,7 +53,7 @@
       <div class="container">
         <div class="row mt-md-10 mt-lg-25 mt-xl-30 mb-xl-20">
           <div class="hero-left-col col-lg-6 d-flex align-items-center">
-             <div class=""> <!-- had `my-auto` -->
+             <div class=""> <!--* had `.my-auto` here -->
               <h1 class="hero-text position-relative fw-bold">
                 <span>Modern</span> Healthcare at Your <span>Fingertips</span>
                 <svg class="hero-stroke position-absolute d-none d-lg-block" width="282" height="17" viewBox="0 0 282 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -62,7 +63,7 @@
               <p class="mt-4 mt-lg-6">
                 Our state-of-the-art facility is equipped with the latest medical technology and staffed by a team of highly skilled professionals who are dedicated to providing personalized care to our patients.
               </p>
-              <button class="btn bg-primary d-flex my-8 mt-lg-10 mb-lg-15 mb-xl-20 mb-xxl-30 text-light-grey" type="button">Book Appointment</button>
+              <button class="btn btn-large d-flex my-8 mt-lg-10 mb-lg-15 mb-xl-20 mb-xxl-30 text-light-grey" type="button">Book Appointment</button>
             </div>
           </div>
 
@@ -198,71 +199,136 @@
     </div>
   </section>
 
-   <section id="why-choose-us" class="why-us py-5 py-lg-8">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 d-md-flex align-items-md-center d-lg-block">
-          <h2 class="why-us-header d-md-none">Why You Should  Choose Us?</h2>
+  <section id="why-choose-us" class="why-us py-5 py-lg-8">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 d-md-flex align-items-md-center d-lg-block">
+        <h2 class="why-us-header d-md-none">Why You Should  Choose Us?</h2>
 
-          <div class="why-us-img-holder flex-centre mt-10 mt-md-0">
-            <img class="why-us-img img-fluid" src="public/assets/imgs/why-choose-us-img.png" alt="Why choose us image">
+        <div class="why-us-img-holder flex-centre mt-10 mt-md-0">
+          <img class="why-us-img img-fluid" src="public/assets/imgs/why-choose-us-img.png" alt="Why choose us image">
+        </div>
+      </div>
+
+      <div class="col-md-8 ps-md-5 ps-lg-10 ps-xl-20 ps-xxl-30">
+        <h2 class="why-us-header d-none d-md-block">Why You Should Choose Us?</h2>
+
+        <div class="reasons d-flex flex-column gap-4 gap-md-5 mt-6 mt-md-8">
+          
+          <div class="d-flex gap-4 gap-lg-5">
+            <div class="flex-centre">
+              <svg class="check" width="17" height="17">
+                <use xlink:href="#check"></use>
+              </svg>
+            </div>
+            <div class="reason">Advanced Medical Technology</div>
+          </div>
+
+          <div class="d-flex gap-4 gap-lg-5">
+            <div class="flex-centre">
+              <svg class="check" width="17" height="17">
+                <use xlink:href="#check"></use>
+              </svg>
+            </div>
+            <div class="reason">Expert Medical Professionals</div>
+          </div>
+
+          <div class="d-flex gap-4 gap-lg-5">
+            <div class="flex-centre">
+              <svg class="check" width="17" height="17">
+                <use xlink:href="#check"></use>
+              </svg>
+            </div>
+            <div class="reason">Patient-Centered Approach</div>
+          </div>
+
+          <div class="d-flex gap-4 gap-lg-5">
+            <div class="flex-centre">
+              <svg class="check" width="17" height="17">
+                <use xlink:href="#check"></use>
+              </svg>
+            </div>
+            <div class="reason">Online Appointment Booking</div>
+          </div>
+
+          <div class="d-flex gap-4 gap-lg-5">
+            <div class="flex-centre">
+              <svg class="check" width="17" height="17">
+                <use xlink:href="#check"></use>
+              </svg>
+            </div>
+            <div class="reason">Specialized Departments</div>
+          </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <section id="dedicatied-doctors" class="doctor py-5 py-lg-8 lh-base">
+    <div class="container d-flex flex-column gap-6 gap-lg-9">
+      <h2 class="doctors-header-text text-center">Our Dedicated Doctors</h2>
+      <p class="text-center">Our dedicated team of doctors brings years of experience and expertise in their respective fields. Trust in their knowledge and skills to provide you with the best possible care.</p>
+      <div class="doctors-cards row">
+
+        <div class="each-card-holder d-flex justify-content-center col-12 col-md-4">
+          <div class="doctor-card d-flex flex-column gap-6 width-max-content p-6">
+            <div class="doctor-image-holder position-relative">
+              <img class="doctor-image img-fluid" src="public/assets/imgs/dr-ololade.png" alt="Dr. Samuel Ololade">
+            </div>
+
+            <div class="d-flex flex-column gap-2 gap-lg-4">
+              <div class="doctor-name fw-semibold">Dr. Samuel Ololade O.</div>
+              <div class="doctor-specialisation fs-6">
+                <span class="d-block">General Surgeon</span>
+                <span class="d-block">Surgical Excellence for Optimal Health</span>
+              </div>
+            </div>
+
+            <div class="btn btn-small width-max-content text-white-90 fw-semibold">View Profile</div>
           </div>
         </div>
 
-        <div class="col-md-8 ps-md-5 ps-lg-10 ps-xl-20 ps-xxl-30">
-          <h2 class="why-us-header d-none d-md-block">Why You Should Choose Us?</h2>
+        <div class="each-card-holder d-flex justify-content-center col-12 col-md-4">
+          <div class="doctor-card d-flex flex-column gap-6 width-max-content p-6">
+            <div class="doctor-image-holder position-relative cardio">
+              <img class="doctor-image img-fluid" src="public/assets/imgs/dr-olalade-2.png" alt="Dr. Samuel - Cardiologist">
+            </div>
 
-          <div class="reasons d-flex flex-column gap-4 gap-md-5 mt-6 mt-md-8">
-            
-            <div class="d-flex gap-4 gap-lg-5">
-             <div class="flex-centre">
-               <svg class="check" width="17" height="17">
-                 <use xlink:href="#check"></use>
-               </svg>
-             </div>
-             <div class="reason">Advanced Medical Technology</div>
+            <div class="d-flex flex-column gap-2 gap-lg-4">
+              <div class="doctor-name fw-semibold">Dr. Samuel Ololade O.</div>
+              <div class="doctor-specialisation fs-6">
+                <span class="d-block">Cardiologist</span>
+                <span class="d-block">Expert Heart Care for a Healthy Life</span>
+              </div>
             </div>
- 
-            <div class="d-flex gap-4 gap-lg-5">
-             <div class="flex-centre">
-               <svg class="check" width="17" height="17">
-                 <use xlink:href="#check"></use>
-               </svg>
-             </div>
-             <div class="reason">Expert Medical Professionals</div>
-            </div>
- 
-            <div class="d-flex gap-4 gap-lg-5">
-             <div class="flex-centre">
-               <svg class="check" width="17" height="17">
-                 <use xlink:href="#check"></use>
-               </svg>
-             </div>
-             <div class="reason">Patient-Centered Approach</div>
-            </div>
- 
-            <div class="d-flex gap-4 gap-lg-5">
-             <div class="flex-centre">
-               <svg class="check" width="17" height="17">
-                 <use xlink:href="#check"></use>
-               </svg>
-             </div>
-             <div class="reason">Online Appointment Booking</div>
-            </div>
- 
-            <div class="d-flex gap-4 gap-lg-5">
-             <div class="flex-centre">
-               <svg class="check" width="17" height="17">
-                 <use xlink:href="#check"></use>
-               </svg>
-             </div>
-             <div class="reason">Specialized Departments</div>
-            </div>
-           </div>
+
+            <div class="btn btn-small width-max-content text-white-90 fw-semibold">View Profile</div>
+          </div>
         </div>
+
+        <div class="each-card-holder d-flex justify-content-center col-12 col-md-4">
+          <div class="doctor-card d-flex flex-column gap-6 width-max-content p-6">
+            <div class="doctor-image-holder position-relative">
+              <img class="doctor-image img-fluid" src="public/assets/imgs/dr-sunday.png" alt="Dr. Joseph Sunday A.O.">
+            </div>
+
+            <div class="d-flex flex-column gap-2 gap-lg-4">
+              <div class="doctor-name fw-semibold">Dr. Joseph Sunday A.O.</div>
+              <div class="doctor-specialisation fs-6">
+                <span class="d-block">General Surgeon</span>
+                <span class="d-block">Surgical Excellence for Optimal Health</span>
+              </div>
+            </div>
+
+            <div class="btn btn-small width-max-content text-white-90 fw-semibold">View Profile</div>
+          </div>
+        </div>
+
       </div>
     </div>
-   </section>
+  </section>
+  
 
   <svg class="d-none" width="0" height="0" xmlns="http://www.w3.org/2000/svg">
     <symbol id="heart" width="40" height="32" viewBox="0 0 40 32">
